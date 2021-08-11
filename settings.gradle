@@ -1,0 +1,3 @@
+rootProject.name = 'design-pattern'
+include 'creational-pattern-singleton'
+include 'creational-pattern-factory-method'
