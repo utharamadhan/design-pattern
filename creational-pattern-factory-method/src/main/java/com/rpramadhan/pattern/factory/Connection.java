@@ -1,6 +1,6 @@
 package com.rpramadhan.pattern.factory;
 
-public interface Accessor {
+public interface Connection {
 
   public void connect();
 

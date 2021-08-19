@@ -1,12 +1,12 @@
 package com.rpramadhan.pattern.factory.postgres;
 
-import com.rpramadhan.pattern.factory.Accessor;
+import com.rpramadhan.pattern.factory.Connection;
 import com.rpramadhan.pattern.factory.ConnectionFactory;
 
 public class PostgresConnectionFactory extends ConnectionFactory {
 
   @Override
-  public Accessor initAccessor(String configFileName) {
-    return new PostgresAccessor(readConfig(configFileName));
+  public Connection createConnection(String configFileName) {
+    return new PostgresConnection(readConfig(configFileName));
   }
 }

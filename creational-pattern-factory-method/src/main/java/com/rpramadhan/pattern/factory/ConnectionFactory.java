@@ -5,7 +5,7 @@ import java.util.Map;
 
 public abstract class ConnectionFactory {
 
-  public abstract Accessor initAccessor(String configFileName);
+  public abstract Connection createConnection(String configFileName);
 
   public Map<String, String> readConfig(String configFileName) {
     Map<String, String> map = new HashMap<>();
@@ -13,9 +13,10 @@ public abstract class ConnectionFactory {
     return map;
   }
 
-  public void connect(String configFileName) {
-    Accessor accessorInterface = initAccessor(configFileName);
-    accessorInterface.connect();
+  public Connection connect(String configFileName) {
+    Connection connection = createConnection(configFileName);
+    connection.connect();
+    return connection;
   }
 
 }
