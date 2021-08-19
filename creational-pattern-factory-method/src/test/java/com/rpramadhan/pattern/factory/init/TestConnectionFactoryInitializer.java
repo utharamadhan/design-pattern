@@ -1,11 +1,8 @@
 package com.rpramadhan.pattern.factory.init;
 
 import com.rpramadhan.pattern.factory.Connection;
-import com.rpramadhan.pattern.factory.ConnectionFactory;
 import com.rpramadhan.pattern.factory.postgres.PostgresConnection;
-import com.rpramadhan.pattern.factory.postgres.PostgresConnectionFactory;
 import com.rpramadhan.pattern.factory.redis.RedisConnection;
-import com.rpramadhan.pattern.factory.redis.RedisConnectionFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
